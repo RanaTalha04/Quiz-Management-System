@@ -1,0 +1,72 @@
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Quiz Management System.exe
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Quiz Management System.deps.json
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Quiz Management System.runtimeconfig.json
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Quiz Management System.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Quiz Management System.pdb
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\App.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System_MarkupCompile.cache
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System_MarkupCompile.lref
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.g.resources
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.AssemblyInfoInputs.cache
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.AssemblyInfo.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.csproj.CoreCompileInputs.cache
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\refint\Quiz Management System.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.pdb
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.genruntimeconfig.cache
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\ref\Quiz Management System.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Signup.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Signup.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.csproj.AssemblyReference.cache
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Man.BD6EDE51.Up2Date
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Login.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Login.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\StudentDashboard.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\TeacherDashboard.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\StudentDashboard.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\TeacherDashboard.baml

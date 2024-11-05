@@ -1,0 +1,80 @@
+﻿<Window x:Class="Quiz_Management_System.TeacherDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quiz_Management_System"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        AllowsTransparency="True" 
+        Background="Transparent"
+        Title="TeacherDashboard" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <!-- Menu Button Column -->
+            <ColumnDefinition Width="4*"/>
+            <!-- Main Content Column -->
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu Button -->
+        <Button Name="menu_bttn" Height="30" Width="30" Click="menu_bttn_Click" Grid.Column="0" Grid.Row="0">
+            <Image Source="Images\Menu.jpeg" Height="30" Width="25"/>
+        </Button>
+
+        <!-- Left Menu Panel -->
+        <StackPanel Name="leftMenuPanel" Background="#4DA1A9" Orientation="Vertical" Grid.Column="0" Grid.Row="1" Visibility="Collapsed">
+            <Button Name="createQuizButton" Content="Create Quiz" Height="40" Margin="5" />
+            <Button Name="checkQuizzesButton" Content="Check Quizzes" Height="40" Margin="5"/>
+            <Button Name="settingsButton" Content="Settings" Height="40" Margin="5"/>
+            <!-- Add more buttons as needed -->
+        </StackPanel>
+
+        <!-- Main Content Area -->
+        <Border Background="#D7E8BA" Grid.Column="1" CornerRadius="0 10 10 0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30">
+                    <Button Name="min_bttn" Height="20" Width="20" Click="min_bttn_Click">
+                        <Image Source="Images\Minus.jpeg" Height="20" Width="15"/>
+                    </Button>
+                    <Button Name="max_bttn" Height="20" Width="20" Click="max_bttn_Click">
+                        <Image Source="Images\square.jpeg" Height="20" Width="15"/>
+                    </Button>
+                    <Button Name="Close_bttn" Height="20" Width="20" Click="Close_bttn_Click">
+                        <Image Source="Images\X.jpeg" Height="20" Width="15"/>
+                    </Button>
+                </StackPanel>
+                <TextBlock Text="Login to App" FontSize="36" FontWeight="Bold" Foreground="#4DA1A9" TextAlignment="Center"/>
+                <TextBlock Text="Enter your credentials to login" FontSize="18" LineHeight="30" TextWrapping="Wrap" Foreground="Gray" TextAlignment="Center" Opacity="1" Margin="12 20"/>
+                <StackPanel VerticalAlignment="Center" Margin="50">
+                    <Grid Margin="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Name="id_lbl" Text="ID: " Grid.Row="1" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
+                        <TextBox Name="user_id_tb" Grid.Row="1" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Visibility="Visible" Margin="20"/>
+                        <TextBlock Name="pass_lbl" Text="Password: " Grid.Row="2" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
+                        <TextBox Name="pass_tb" Grid.Row="2" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Margin="20" Visibility="Visible"/>
+                        <Button Name="login_bttn" Content="Login" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="170" Margin="20" Background="Transparent" Foreground="#4DA1A9" BorderBrush="Gray" BorderThickness="1" Padding="15"/>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
