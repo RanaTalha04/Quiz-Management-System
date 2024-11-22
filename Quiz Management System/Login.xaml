@@ -35,7 +35,7 @@
                 <TextBlock Text="Login to App" FontSize="36" FontWeight="Bold" Foreground="#4DA1A9" TextAlignment="Center"/>
                 <TextBlock Text="Enter your credentials to login" FontSize="18" LineHeight="30" TextWrapping="Wrap" Foreground="Gray" TextAlignment="Center" Opacity="1" Margin="12 20"/>
                 <StackPanel VerticalAlignment="Center" Margin="50">
-                    <Grid Margin="15">
+                    <Grid Margin="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto"/>
                             <ColumnDefinition Width="*"/>
@@ -45,14 +45,14 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
-                        <TextBlock Name="id_lbl" Text="ID: " Grid.Row="1" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
-                        <TextBox Name="user_id_tb" Grid.Row="1" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Visibility="Visible" Margin="20"/>
-                        <TextBlock Name="pass_lbl" Text="Password: " Grid.Row="2" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
-                        <TextBox Name="pass_tb" Grid.Row="2" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Margin="20" Visibility="Visible"/>
-                        <Button Name="login_bttn" Content="Login" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="170" Margin="20" Background="Transparent" Foreground="#4DA1A9" BorderBrush="Gray" BorderThickness="1" Padding="15" MouseEnter="login_bttn_MouseEnter" MouseLeave="login_bttn_MouseLeave" Click="login_bttn_Click"/>
+                        <TextBlock Name="id_lbl" Text="ID: " Grid.Row="0" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
+                        <TextBox Name="user_id_tb" Grid.Row="0" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Visibility="Visible" Margin="20"/>
+                        <TextBlock Name="pass_lbl" Text="Password: " Grid.Row="1" Grid.Column="0" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Margin="20"/>
+                        <TextBox Name="pass_tb" Grid.Row="1" Grid.Column="1" FontSize="15" FontWeight="SemiBold" Foreground="Gray" Height="30" Background="#ffffff" Margin="20" Visibility="Visible"/>
+                        <Button Name="forgotPass_bttn" Content="Forgot Password" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="170" Margin="20" Background="Transparent" Foreground="#4DA1A9" BorderBrush="Gray" BorderThickness="1" Padding="15" MouseEnter="login_bttn_MouseEnter" MouseLeave="login_bttn_MouseLeave" Click="forgotPass_bttn_Click"/>
+                        <Button Name="login_bttn" Content="Login" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="170" Margin="10" Background="Transparent" Foreground="#4DA1A9" BorderBrush="Gray" BorderThickness="1" Padding="15" MouseEnter="login_bttn_MouseEnter" MouseLeave="login_bttn_MouseLeave" Click="login_bttn_Click"/>
                     </Grid>
                 </StackPanel>
             </StackPanel>

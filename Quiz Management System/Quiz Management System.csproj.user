@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CreateQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ForgotPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,8 +25,17 @@
     <Compile Update="TeacherDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CreateQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ForgotPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -31,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TeacherDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewQuiz.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

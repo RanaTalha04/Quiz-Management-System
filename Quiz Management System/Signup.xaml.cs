@@ -81,11 +81,13 @@ namespace Quiz_Management_System
             {
                 if (string.IsNullOrEmpty(user_id_tb.Text) || string.IsNullOrEmpty(pass_tb.Text))
                 {
-                    MessageBox.Show("Id or Password incorrect or empty");
+                    MessageBox.Show("Please fill in all fields.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
                 else if (pass_tb.Text != confirm_pass_tb.Text)
                 {
-                    MessageBox.Show("Password doesn't match");
+                    MessageBox.Show("Password does not match.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
                 else if (user_id_tb.Text.StartsWith("S"))
                 {
@@ -116,7 +118,7 @@ namespace Quiz_Management_System
 
                                 if (num > 0)
                                 {
-                                    MessageBox.Show("Student Registered Successfully");
+                                    MessageBox.Show("Student registered successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                                     Login login = new Login();
                                     login.Show();
                                     user_id_tb.Clear();
@@ -128,14 +130,16 @@ namespace Quiz_Management_System
 
                                 else
                                 {
-                                    MessageBox.Show("An error occurred. Please try again later.");
+                                    MessageBox.Show("Account already exist", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                                    return;
                                 }
                             }
                         }
                     }
-                    catch(Exception ex)
+                    catch
                     {
-                        MessageBox.Show("An error occurred. Please try again later.");
+                        MessageBox.Show("Account already exist", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
                     }
                 }
 
@@ -168,7 +172,7 @@ namespace Quiz_Management_System
 
                                 if (num > 0)
                                 {
-                                    MessageBox.Show("Teacher Registered Successfully");
+                                    MessageBox.Show("Teacher registered successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                                     Login login = new Login();
                                     login.Show();
                                     user_id_tb.Clear();
@@ -180,24 +184,28 @@ namespace Quiz_Management_System
 
                                 else
                                 {
-                                    MessageBox.Show("An error occurred. Please try again later.");
+                                    MessageBox.Show("Account already exist", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                                    return;
                                 }
                             }
                         }
                     }
-                    catch (Exception ex)
+                    catch
                     {
-                        MessageBox.Show("An error occurred. Please try again later.");
+                        MessageBox.Show("Account already exist", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Incorrect Id syntax. Student's id starts with 'S' and Teacher's id starts with 'T'");
+                    MessageBox.Show("Please enter a valid ID format (T, S).", "ID Format Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show("An error occurred. Please try again later.");
+                MessageBox.Show("Error Occured", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
         }
 

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\App.xaml
-41067043338
+7689286294
 
-710035011
+10-1660260508
 224-1880913413
-Login.xaml;Signup.xaml;StudentDashboard.xaml;TeacherDashboard.xaml;
+CreateQuiz.xaml;ForgotPassword.xaml;Login.xaml;Signup.xaml;StudentDashboard.xaml;TeacherDashboard.xaml;ViewQuiz.xaml;
 
 False
 

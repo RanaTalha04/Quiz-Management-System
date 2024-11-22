@@ -70,3 +70,10 @@ C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz 
 C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\TeacherDashboard.g.cs
 C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\StudentDashboard.baml
 C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\TeacherDashboard.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\Quiz Management System.sourcelink.json
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\CreateQuiz.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\CreateQuiz.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\ViewQuiz.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\ViewQuiz.baml
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\ForgotPassword.g.cs
+C:\App\University\5th Semester\Projects\Enterprise Application Development\Quiz Management System\Quiz Management System\obj\Debug\net8.0-windows\ForgotPassword.baml

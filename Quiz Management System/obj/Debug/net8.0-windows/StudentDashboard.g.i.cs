@@ -77,7 +77,7 @@ namespace Quiz_Management_System {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Quiz Management System;component/studentdashboard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Quiz Management System;V1.0.0.0;component/studentdashboard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\StudentDashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

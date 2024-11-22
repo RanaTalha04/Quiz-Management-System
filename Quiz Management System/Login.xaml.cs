@@ -30,6 +30,7 @@ namespace Quiz_Management_System
                 this.DragMove();
             }
         }
+
         private void Sign_up_bttn_MouseEnter(object sender, MouseEventArgs e)
         {
             if (sender is Button button)
@@ -80,7 +81,8 @@ namespace Quiz_Management_System
         {
             if (string.IsNullOrEmpty(user_id_tb.Text) || string.IsNullOrEmpty(pass_tb.Text))
             {
-                MessageBox.Show("Id or Password Incorrect");
+                MessageBox.Show("Please fill in all fields.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
             else if (user_id_tb.Text.StartsWith("S"))
             {
@@ -109,7 +111,7 @@ namespace Quiz_Management_System
                                     string studentId = reader["S_Id"].ToString();
                                     string studentName = reader["S_Name"].ToString();
 
-                                    MessageBox.Show($"Welcome, {studentName}!");
+                                    MessageBox.Show($"Welcome, {studentName}!", "Welcome", MessageBoxButton.OK, MessageBoxImage.Information);
 
                                     StudentDashboard s_dashboard = new StudentDashboard();
                                     s_dashboard.Show();
@@ -120,15 +122,16 @@ namespace Quiz_Management_System
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Invalid ID or Password. Please try again.");
+                                    MessageBox.Show("Please enter a valid ID or Password", "ID Error", MessageBoxButton.OK, MessageBoxImage.Error);
                                 }
                             }
                         }
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("An error occured ", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
             }
 
@@ -159,7 +162,7 @@ namespace Quiz_Management_System
                                     string teacherId = reader["T_Id"].ToString();
                                     string teacherName = reader["T_Name"].ToString();
 
-                                    MessageBox.Show($"Welcome, {teacherName}!");
+                                    MessageBox.Show($"Welcome, {teacherName}!","Welcome", MessageBoxButton.OK,MessageBoxImage.Information);
 
                                     TeacherDashboard T_dashboard = new TeacherDashboard();
                                     T_dashboard.Show();
@@ -170,22 +173,31 @@ namespace Quiz_Management_System
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Invalid ID or Password. Please try again.");
+                                    MessageBox.Show("Please enter a valid ID or Password ", "ID Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
                                 }
                             }
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("Error Occured. ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-               
+
             }
             else
             {
-                MessageBox.Show("Incorrect Id syntax. Student's id starts with 'S' and Teacher's id starts with 'T'");
+                MessageBox.Show("Please enter a valid ID format (T, S).", "ID Format Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                
             }
+        }
+
+        private void forgotPass_bttn_Click(object sender, RoutedEventArgs e)
+        {
+            ForgotPassword forgotPassword = new ForgotPassword();
+            forgotPassword.Show();
+            this.Hide();
         }
     }
 }
