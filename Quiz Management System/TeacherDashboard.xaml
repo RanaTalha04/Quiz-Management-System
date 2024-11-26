@@ -10,7 +10,7 @@
         WindowState="Maximized"
         AllowsTransparency="True" 
         Background="Transparent"
-        Title="TeacherDashboard" Height="450" Width="800">
+        Title="TeacherDashboard" Height="510" Width="800">
 
     <Grid>
         <Border Background="White" Grid.Column="1" CornerRadius="0 10 10 0">
@@ -32,6 +32,7 @@
             <TextBlock Text="Dashboard" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff"/>
             <Button Content="Create Quiz" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="CreateQuiz_Button_Click"/>
             <Button Content="View Quizzes" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="ViewQuizzesButton_Click" />
+            <Button Content="View Marks" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="ViewMarksButton_Click" />
             <Button Content="Log Out" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="LogOut_Button_Click" />
         </StackPanel>
         <Frame x:Name="MainFrame" Margin="200,30,0,0" NavigationUIVisibility="Hidden"/>

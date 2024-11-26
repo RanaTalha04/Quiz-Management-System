@@ -12,14 +12,13 @@ namespace Quiz_Management_System
         {
             InitializeComponent();
             MainFrame.Content = new TextBlock
-                {
+            {
                     Text = "Welcome to the Teacher Dashboard!",
                     FontSize = 24,
                     HorizontalAlignment = HorizontalAlignment.Center,
-                    VerticalAlignment = VerticalAlignment.Center
-                    
-                };
-            }
+                    VerticalAlignment = VerticalAlignment.Center      
+             };
+        }
 
 
         private void bttn_MouseEnter(object sender, MouseEventArgs e)
@@ -63,7 +62,12 @@ namespace Quiz_Management_System
 
         private void ViewQuizzesButton_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new ViewQuiz());
+            MainFrame.Navigate(new ViewQuizTeacher());
+        }
+
+        private void ViewMarksButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ResultPage(" ",true));
         }
 
         private void CreateQuiz_Button_Click(object sender, RoutedEventArgs e)

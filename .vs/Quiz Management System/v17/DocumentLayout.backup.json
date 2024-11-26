@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\viewquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\viewquiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\resultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\resultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\resultpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\resultpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\viewquiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\viewquiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|c:\\app\\university\\5th semester\\projects\\enterprise application development\\quiz management system\\quiz management system\\viewquizstudent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46461F96-04DF-4F44-BF54-2C3EDD92355E}|Quiz Management System\\Quiz Management System.csproj|solutionrelative:quiz management system\\viewquizstudent.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +22,33 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewQuizStudent.xaml",
+              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuizStudent.xaml",
+              "RelativeDocumentMoniker": "Quiz Management System\\ViewQuizStudent.xaml",
+              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuizStudent.xaml",
+              "RelativeToolTip": "Quiz Management System\\ViewQuizStudent.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T12:11:17.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResultPage.xaml.cs",
+              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ResultPage.xaml.cs",
+              "RelativeDocumentMoniker": "Quiz Management System\\ResultPage.xaml.cs",
+              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ResultPage.xaml.cs",
+              "RelativeToolTip": "Quiz Management System\\ResultPage.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwB8AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:58:19.405Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -31,38 +56,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\App.xaml",
-              "RelativeDocumentMoniker": "Quiz Management System\\App.xaml",
-              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\App.xaml",
-              "RelativeToolTip": "Quiz Management System\\App.xaml",
+              "Title": "ResultPage.xaml",
+              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ResultPage.xaml",
+              "RelativeDocumentMoniker": "Quiz Management System\\ResultPage.xaml",
+              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ResultPage.xaml",
+              "RelativeToolTip": "Quiz Management System\\ResultPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-22T14:46:37.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ViewQuiz.xaml.cs",
-              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuiz.xaml.cs",
-              "RelativeDocumentMoniker": "Quiz Management System\\ViewQuiz.xaml.cs",
-              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuiz.xaml.cs",
-              "RelativeToolTip": "Quiz Management System\\ViewQuiz.xaml.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAuwIUAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T05:45:09.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewQuiz.xaml",
-              "DocumentMoniker": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuiz.xaml",
-              "RelativeDocumentMoniker": "Quiz Management System\\ViewQuiz.xaml",
-              "ToolTip": "C:\\App\\University\\5th Semester\\Projects\\Enterprise Application Development\\Quiz Management System\\Quiz Management System\\ViewQuiz.xaml",
-              "RelativeToolTip": "Quiz Management System\\ViewQuiz.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-20T05:43:52.139Z",
+              "WhenOpened": "2024-11-26T11:56:51.001Z",
               "EditorCaption": ""
             }
           ]

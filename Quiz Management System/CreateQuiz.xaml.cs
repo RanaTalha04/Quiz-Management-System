@@ -28,7 +28,7 @@ namespace Quiz_Management_System
 
                 int quizId = Convert.ToInt32(cmd.ExecuteScalar());
 
-                // Insert the questions
+
                 foreach (var question in questions)
                 {
                     string insertQuestionQuery = "INSERT INTO Questions (QuizID, QuestionText, CorrectAnswer) " +
@@ -156,17 +156,19 @@ public partial class CreateQuizPage : Page
                 MessageBox.Show("Please enter a valid time format (HH:mm AM/PM).", "Time Format Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+
             List<QuestionData> questions = new List<QuestionData>();
 
             foreach (UIElement element in QuestionsPanel.Children)
             {
                 if (element is StackPanel questionPanel)
                 {
+                    // Get the question text
                     string questionText = ((TextBox)questionPanel.Children[1]).Text;
-                    string correctAnswer = ((TextBox)questionPanel.Children[5]).Text;
-                    List<string> options = new List<string>();
 
-                    for (int i = 3; i <= 6; i++)
+                    // Collect options from the dynamically added textboxes
+                    List<string> options = new List<string>();
+                    for (int i = 3; i < questionPanel.Children.Count - 1; i++) // Iterate through option TextBoxes
                     {
                         if (questionPanel.Children[i] is TextBox optionTextBox)
                         {
@@ -174,6 +176,8 @@ public partial class CreateQuizPage : Page
                         }
                     }
 
+                    // Get the correct answer
+                    string correctAnswer = ((TextBox)questionPanel.Children[questionPanel.Children.Count - 1]).Text;
 
                     questions.Add(new QuestionData
                     {
@@ -194,10 +198,8 @@ public partial class CreateQuizPage : Page
             {
                 MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
-
-            ClearForm();
         }
+
 
 
         private bool IsValidTimeFormat(string time)

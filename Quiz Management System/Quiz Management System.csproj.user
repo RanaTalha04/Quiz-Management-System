@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AttemptQuiz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreateQuiz.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ResultPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Signup.xaml.cs">
@@ -25,11 +31,17 @@
     <Compile Update="TeacherDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewQuiz.xaml.cs">
+    <Compile Update="ViewQuizStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewQuizTeacher.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AttemptQuiz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CreateQuiz.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -37,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResultPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Signup.xaml">
@@ -48,7 +63,10 @@
     <Page Update="TeacherDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewQuiz.xaml">
+    <Page Update="ViewQuizStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewQuizTeacher.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

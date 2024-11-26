@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quiz_Management_System"
-        mc:Ignorable="d" WindowStartupLocation="Manual" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
-        Title="StudentDashboard" Height="450" Width="800">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized" AllowsTransparency="True" Background="Transparent"
+        Title="StudentDashboard" Height="510" Width="800">
     <Grid>
         <Border Background="#D7E8BA" CornerRadius="10 10 10 10">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
@@ -20,5 +20,13 @@
                 </Button>
             </StackPanel>
         </Border>
+        <StackPanel Background="#4DA1A9" Width="190" HorizontalAlignment="Left" >
+            <TextBlock Text="Dashboard" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff"/>
+            <Button Content="View Quiz" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="ViewQuizButton_Click"/>
+            <Button Content="View Result" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="ViewResultButton_Click" />
+            <Button Content="Download" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="DownloadQuizButton_Click" />
+            <Button Content="Log Out" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Width="150" Margin="0,50,0,0" Background="Transparent" Foreground="#ffffff" BorderBrush="#ffffff" BorderThickness="1" Padding="15" MouseEnter="bttn_MouseEnter" MouseLeave="bttn_MouseLeave" Click="LogOut_Button_Click" />
+        </StackPanel>
+        <Frame x:Name="MainFrame" Margin="200,30,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

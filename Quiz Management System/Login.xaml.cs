@@ -108,12 +108,12 @@ namespace Quiz_Management_System
                                 {
                                     reader.Read();
 
-                                    string studentId = reader["S_Id"].ToString();
-                                    string studentName = reader["S_Name"].ToString();
-
+                                    string? studentId = reader["S_Id"].ToString();
+                                    string? studentName = reader["S_Name"].ToString();
+                                    string studentid = studentId;
                                     MessageBox.Show($"Welcome, {studentName}!", "Welcome", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                                    StudentDashboard s_dashboard = new StudentDashboard();
+                                    StudentDashboard s_dashboard = new StudentDashboard(studentid);
                                     s_dashboard.Show();
 
                                     user_id_tb.Clear();
@@ -159,8 +159,8 @@ namespace Quiz_Management_System
                                 {
                                     reader.Read();
 
-                                    string teacherId = reader["T_Id"].ToString();
-                                    string teacherName = reader["T_Name"].ToString();
+                                    string? teacherId = reader["T_Id"].ToString();
+                                    string? teacherName = reader["T_Name"].ToString();
 
                                     MessageBox.Show($"Welcome, {teacherName}!","Welcome", MessageBoxButton.OK,MessageBoxImage.Information);
 

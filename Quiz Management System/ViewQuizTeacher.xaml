@@ -1,0 +1,50 @@
+﻿<Page x:Class="Quiz_Management_System.ViewQuizTeacher"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="View Quizzes">
+
+    <Grid Background="#F7F7F7">
+        <StackPanel Margin="20">
+            <TextBlock Text="View Quizzes" FontSize="26" FontWeight="Bold" Foreground="#4DA1A9" Margin="0,0,0,20" />
+        </StackPanel>
+
+        <Grid Margin="20,80,20,20">
+            <DataGrid x:Name="QuizDataGrid" AutoGenerateColumns="False" 
+                      Background="White" 
+                      BorderBrush="#CCCCCC" BorderThickness="1"
+                      AlternatingRowBackground="#F5F5F5" 
+                      RowBackground="White"
+                      CanUserAddRows="False" 
+                      CanUserDeleteRows="False" 
+                      IsReadOnly="True"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="200" />
+                    <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="300" />
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100" />
+                    <DataGridTemplateColumn Header="Actions" Width="150">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button Content="Edit"
+                                            Click="EditButton_Click"
+                                            Background="#4DA1A9" Foreground="White" 
+                                            FontSize="12" FontWeight="Bold" 
+                                            Padding="5,2" Margin="5,0" Width="60" 
+                                            BorderThickness="0" Cursor="Hand" />
+                                    <Button Content="Delete"
+                                            Click="DeleteButton_Click"
+                                            Background="#E74C3C" Foreground="White" 
+                                            FontSize="12" FontWeight="Bold" 
+                                            Padding="5,2" Margin="5,0" Width="60" 
+                                            BorderThickness="0" Cursor="Hand" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Page>
