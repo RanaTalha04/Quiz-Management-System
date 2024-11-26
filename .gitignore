@@ -1,14 +1,14 @@
 # Ignore database files
 Database/*.mdf
 Database/*.ldf
-
+Database/
 # Ignore Visual Studio build artifacts
 *.obj
 *.exe
 *.dll
 bin/
 obj/
-Database/
+
 # Ignore user-specific settings
 *.user
 *.suo
