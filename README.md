@@ -41,8 +41,3 @@ A user-friendly WPF application designed for managing quizzes, allowing teachers
 2. **Visual Studio:** Use Visual Studio for project development and debugging.
 3. **NuGet Packages:** Install the following:
    - `ClosedXML`
-
-### Steps:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/quiz-management-system.git
