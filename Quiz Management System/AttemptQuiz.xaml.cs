@@ -12,13 +12,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
     public partial class AttemptQuiz : Window
     {
+
         private int QuizID;
         private string StudentID;
+        string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
         public class Option
         {
             public int OptionID { get; set; }
@@ -44,7 +48,6 @@ namespace Quiz_Management_System
 
         private void LoadQuestions()
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True";
 
             try
             {
@@ -56,7 +59,7 @@ namespace Quiz_Management_System
 
                     string query = @"
                 SELECT 
-                    q.QuestionID, q.QuestionText, q.CorrectAnswer, 
+                    q.QuestionID, q.QuestionText, q.CorrectAnswers, 
                     o.OptionID, o.OptionText
                 FROM Questions q
                 LEFT JOIN Options o ON q.QuestionID = o.QuestionID
@@ -131,8 +134,6 @@ namespace Quiz_Management_System
 
         private void SaveResultToDatabase(int quizId, int marksObtained, int totalMarks)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True";
-
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))

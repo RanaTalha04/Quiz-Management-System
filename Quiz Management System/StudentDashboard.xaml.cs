@@ -9,9 +9,13 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Data;
+using System.Windows;
 using System.Windows.Media;
+using ClosedXML.Excel;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Data.SqlClient;
 
 namespace Quiz_Management_System
 {
@@ -69,17 +73,7 @@ namespace Quiz_Management_System
             this.Close();
         }
 
-        private void DownloadQuizButton_Click(object sender, RoutedEventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|Text Files (*.txt)|*.txt";
-            if (saveFileDialog.ShowDialog() == true)
-            {
-                string filePath = saveFileDialog.FileName;
-            }
-        }
-
-
+    
         private void ViewResultButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -91,9 +85,55 @@ namespace Quiz_Management_System
                 MessageBox.Show($"Error opening result page: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
         private void ViewQuizButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new ViewQuizStudent(StudentID));
+        }
+
+
+        private void DownloadQuizButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Excel Files (*.xlsx)|*.xlsx"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string filePath = saveFileDialog.FileName;
+
+                try
+                {
+                    string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
+                    string query = "SELECT QuizID, StudentID, MarksObtained, TotalMarks, AttemptDate FROM Results";
+
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(dataTable, "Results");
+                                workbook.SaveAs(filePath);
+                            }
+                        }
+                    }
+
+                    MessageBox.Show("Results Exported successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while exporting results: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
 
         private void LogOut_Button_Click(object sender, RoutedEventArgs e)

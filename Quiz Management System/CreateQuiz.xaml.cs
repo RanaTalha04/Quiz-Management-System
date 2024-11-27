@@ -3,14 +3,16 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
     public static class DatabaseHelper
     {
+
         public static void SaveQuiz(string title, string description, int numberOfQuestions, string startTime, string endTime, List<QuestionData> questions)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -31,12 +33,12 @@ namespace Quiz_Management_System
 
                 foreach (var question in questions)
                 {
-                    string insertQuestionQuery = "INSERT INTO Questions (QuizID, QuestionText, CorrectAnswer) " +
-                                                 "VALUES (@QuizID, @QuestionText, @CorrectAnswer); SELECT SCOPE_IDENTITY();";
+                    string insertQuestionQuery = "INSERT INTO Questions (QuizID, QuestionText, CorrectAnswers) " +
+                                                 "VALUES (@QuizID, @QuestionText, @CorrectAnswers); SELECT SCOPE_IDENTITY();";
                     cmd = new SqlCommand(insertQuestionQuery, connection);
                     cmd.Parameters.AddWithValue("@QuizID", quizId);
                     cmd.Parameters.AddWithValue("@QuestionText", question.QuestionText);
-                    cmd.Parameters.AddWithValue("@CorrectAnswer", question.CorrectAnswer);
+                    cmd.Parameters.AddWithValue("@CorrectAnswers", question.CorrectAnswer);
 
                     int questionId = Convert.ToInt32(cmd.ExecuteScalar());
 
@@ -163,12 +165,10 @@ public partial class CreateQuizPage : Page
             {
                 if (element is StackPanel questionPanel)
                 {
-                    // Get the question text
                     string questionText = ((TextBox)questionPanel.Children[1]).Text;
 
-                    // Collect options from the dynamically added textboxes
                     List<string> options = new List<string>();
-                    for (int i = 3; i < questionPanel.Children.Count - 1; i++) // Iterate through option TextBoxes
+                    for (int i = 3; i < questionPanel.Children.Count - 1; i++) 
                     {
                         if (questionPanel.Children[i] is TextBox optionTextBox)
                         {
@@ -176,7 +176,6 @@ public partial class CreateQuizPage : Page
                         }
                     }
 
-                    // Get the correct answer
                     string correctAnswer = ((TextBox)questionPanel.Children[questionPanel.Children.Count - 1]).Text;
 
                     questions.Add(new QuestionData

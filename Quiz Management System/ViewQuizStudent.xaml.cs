@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
@@ -16,6 +17,10 @@ namespace Quiz_Management_System
 
     public partial class ViewQuizStudent : Page
     {
+
+
+        string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
         private string StudentID;
         public ViewQuizStudent(string studentID)
         {
@@ -26,8 +31,6 @@ namespace Quiz_Management_System
 
         private void LoadQuizzes()
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
             try
             {
                 List<Quizes> quizzes = new List<Quizes>();

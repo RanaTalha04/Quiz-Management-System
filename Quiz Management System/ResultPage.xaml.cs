@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
     public partial class ResultPage : Page
     {
+        string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
         private string StudentID;
         private bool IsTeacher;
 
@@ -22,7 +24,6 @@ namespace Quiz_Management_System
 
         private void LoadResults()
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True";
             List<StudentResult> results = new List<StudentResult>();
 
             try
@@ -35,7 +36,6 @@ namespace Quiz_Management_System
 
                     if (IsTeacher)
                     {
-                        // Teacher view: Show all students' results
                         query = @"
                             SELECT r.StudentID, q.Title, r.MarksObtained, r.TotalMarks, r.AttemptDate
                             FROM Results r
@@ -43,7 +43,6 @@ namespace Quiz_Management_System
                     }
                     else
                     {
-                        // Student view: Show only the current student's results
                         query = @"
                             SELECT r.StudentID, q.Title, r.MarksObtained, r.TotalMarks, r.AttemptDate
                             FROM Results r

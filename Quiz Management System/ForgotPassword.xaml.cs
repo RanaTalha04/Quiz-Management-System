@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
@@ -21,6 +22,8 @@ namespace Quiz_Management_System
     /// </summary>
     public partial class ForgotPassword : Window
     {
+        string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
         public ForgotPassword()
         {
             InitializeComponent();
@@ -73,9 +76,7 @@ namespace Quiz_Management_System
             {
                 try
                 {
-                    string constring = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
-                    using (SqlConnection con = new SqlConnection(constring))
+                    using (SqlConnection con = new SqlConnection(connectionString))
                     {
                         con.Open();
 
@@ -117,9 +118,8 @@ namespace Quiz_Management_System
             {
                 try
                 {
-                    string constring = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
-                    using (SqlConnection con = new SqlConnection(constring))
+                    using (SqlConnection con = new SqlConnection(connectionString))
                     {
                         con.Open();
 

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace Quiz_Management_System
 {
@@ -26,6 +27,8 @@ namespace Quiz_Management_System
        
     public partial class ViewQuizTeacher : Page
     {
+        string connectionString = "Data Source=TALHA\\SQLEXPRESS;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
         public ViewQuizTeacher()
         {
 
@@ -35,7 +38,6 @@ namespace Quiz_Management_System
 
         private void LoadQuizzes()
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
             try
             {
@@ -70,8 +72,6 @@ namespace Quiz_Management_System
         }
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
             var button = sender as Button;
             var selectedQuiz = button?.DataContext as Quiz;
 
@@ -114,8 +114,6 @@ namespace Quiz_Management_System
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=QMS;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
             var button = sender as Button;
             var selectedQuiz = button?.DataContext as Quiz;
 
